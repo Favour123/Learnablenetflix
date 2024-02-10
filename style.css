@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  font-size: 30px;
+}
+body{
+  background: rgb(21,21,21);
+background: linear-gradient(174deg, rgba(21,21,21,1) 0%, rgba(36,36,36,1) 100%);
+} 
+main{
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-top: 1rem;
+  margin-bottom: 0;
+} 
+nav,ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h3{
+  color: whitesmoke;
+}
+li{
+  align-items: center;
+  list-style: none;
+  font-size: 30px;
+display: flex;
+padding: 21px 21px 21px 21px;
+}
