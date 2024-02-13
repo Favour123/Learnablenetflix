@@ -11,14 +11,20 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 body{
-  background: rgb(21,21,21);
-background: linear-gradient(174deg, rgba(21,21,21,1) 0%, rgba(36,36,36,1) 100%);
+  background: rgb(252, 247, 247);
+ 
+/* background: linear-gradient(174deg, rgba(21,21,21,1) 0%, rgba(36,36,36,1) 100%); */
 } 
 main{
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 1rem;
+  margin-left: 18%;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-right: 15px;
+  margin-right: 18%;
+  padding-top: 0.5rem;
   margin-bottom: 0;
+  margin-top: 0;
+  background-color: rgb(29, 36, 36);
 } 
 nav,ul{
   display: flex;
@@ -28,7 +34,7 @@ nav,ul{
 h3,h2{
   color: whitesmoke;
 }
-li{
+nav li{
   align-items: center;
   list-style: none;
   font-size: 30px;
@@ -40,18 +46,166 @@ li{
   color: whitesmoke;
   z-index: 10; 
   width: 39rem;
-  font-size: 58px;
+  font-size: 45px;
   letter-spacing: 3px;
 }
 .head{
   display: flex;
-  height: 7rem;
+  height: 5rem;
 }
 .imgs{
   position: relative;
   top: -120px;
-  left: 8px;
+  left: 0px;
 }
 span{
   border-bottom: 4px solid green;
+}
+.text{
+  font-size: 15px;
+  color: white;
+}
+.text h5{
+  width: 15rem;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+.text a{
+  text-decoration: none ;
+  color: white;
+  padding-bottom: 6px;
+}
+.text a:hover{
+  border-bottom: 2px solid green;
+}
+
+.intro{
+  padding-bottom: 120px;
+  border-bottom: 2px solid gray;
+}
+.row{
+  padding-top: 15px;
+}
+section h3{
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.contain p{
+  font-size: 18px;
+  padding-bottom: 6px;
+}
+.content p ,p{
+  color: white;
+}
+.up label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #303030;
+  margin-bottom:2px ;
+  color:rgba(255, 255, 255, 1);
+  cursor: pointer;
+  position: relative; 
+  letter-spacing: 1.5px;
+  width: 5rem;
+}
+input[type="radio"]{
+  display: none;
+}
+label::after{
+  content: '+';
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+  transition: transfrom 0.5s ease-in-out;
+}
+section .contain .content{
+  overflow: hidden;
+  background-color: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height:0 ;
+  transition: max-height 0.5s, padding 0.5s;
+}
+section .contain input[type="radio"]:checked + label + .content {
+  max-height:50% ;
+  padding: 30px 20px;}
+  
+section .contain input[type="radio"]:checked + label::after  {
+ transform: rotate(135deg);
+}
+
+ figure{
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+ }
+ figure ol,li{
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+ }
+.row1, .row2{
+  display: flex;
+  padding-bottom: 30px;
+  text-align: left;
+  align-items: flex-start;
+}
+.section .column-left{
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+.project{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+input{
+  border: none;
+  outline: none;
+ border-bottom: 3px solid grey;
+ padding-bottom: 15px;
+ background-color: rgb(29, 36, 36);
+ color: white;
+ width: 100%;
+}
+.last h5{
+  font-size: 13px;
+  padding-bottom: 20px;
+  color: aliceblue;
+  max-width: 12rem;
+}
+#footer{
+  display: flex;
+  gap: 30px;
+}
+.footer{
+padding-bottom: 2rem;
+margin-top: 15px;
+margin-bottom: 18px;
+border-bottom: 2px solid grey;
+}
+.last h3{
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+#text{
+margin-top: 20px;
+padding-top: 20px;
+margin-bottom: 20px;
+  text-align: right;
+  letter-spacing: 1.5px;
+}
+#footerimg{
+  position: relative;
+  left: -13px;
 }
